@@ -1,2 +1,17 @@
 # Finding_Permutation_Of-String_Using__Recursion.py
-We will use the recursion approach to generate all the permutations of the given string. We will also, discuss the method and intuition and the time complexity.
+'''
+suppose, we are given a string--> abc, bc,c
+output--> abc acb bac bca cab cba
+bc cb
+c
+INTUITION::
+IMAGINE THREE SHAPES, LIKE CIRCLE, TRIANGLE, AND A RECTANGLE AND WE HAVE TO ARRANGE THEM IN ALL POSSIBLE WAYS. SUPPOSE,
+WE HAVE THREE SPOTS FOR ALL OF THEM AND WE HAVE TO PUT ALL OF THEM AT EVERY POSSIBLE PLACE.
+AS WE ARE USING RECURSION, WE WILL TRY TO DO THE LEAST WORK AND THUS, HANDLE THE FIRST PLACE AND ASK RECURSION TO HANDLE THE FIRST+1 TILL THE LAST PLACE.
+--> SO, WE HAVE TO SWAP EACH ELEMENT SO THEY COULD APPEAR ON THE FIRST PLACE.
+--> WE ALSO HAVE TO SWAP THEM AGAIN AFTER PERFORMING RECURSION (BACKTREKKING) DO REVERSE THE CHANGES THAT WE HAVE DONE FOR THE EASE OF WORK.
+'''
+
+
+Time Complexity---> O(N*N!)
+Space Complexity--> O(N)
